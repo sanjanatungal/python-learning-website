@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 - Practice with Small Projects</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="lesson-container">
+        <header class="lesson-header">
+            <h1>Lesson 7: Practice with Small Projects</h1>
+        </header>
+
+        <section class="lesson-content">
+            <h2>Why Small Projects?</h2>
+            <p>Working on small projects helps you solidify your Python knowledge by applying the concepts you've learned. These projects will build confidence and give you practical coding experience.</p>
+
+            <h3>Project 1: Number Guessing Game</h3>
+            <p>Create a simple game where the computer generates a random number, and the player tries to guess it. Here's how to approach it:</p>
+            <ul>
+                <li>Use the <code>random</code> library to generate a random number.</li>
+                <li>Prompt the player to input their guess.</li>
+                <li>Give feedback if the guess is too high, too low, or correct.</li>
+                <li>Loop until the player guesses correctly or chooses to quit.</li>
+            </ul>
+            <pre><code>import random
+number = random.randint(1, 100)
+guess = None
+while guess != number:
+    guess = int(input("Guess a number between 1 and 100: "))
+    if guess < number:
+        print("Too low!")
+    elif guess > number:
+        print("Too high!")
+    else:
+        print("You guessed it!")</code></pre>
+
+            <h3>Project 2: Simple Calculator</h3>
+            <p>Build a basic calculator that can perform addition, subtraction, multiplication, and division:</p>
+            <ul>
+                <li>Ask the user for two numbers and an operator.</li>
+                <li>Perform the operation and display the result.</li>
+                <li>Use functions for each operation for modularity.</li>
+            </ul>
+            <pre><code>def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Cannot divide by zero!"</code></pre>
+
+            <h3>Project 3: Word Frequency Counter</h3>
+            <p>Write a program that reads a text file, counts the frequency of each word, and displays the results:</p>
+            <ul>
+                <li>Use <code>with open()</code> to read the file.</li>
+                <li>Use a dictionary to store word counts.</li>
+                <li>Display the most frequent words in the text.</li>
+            </ul>
+            <pre><code>word_count = {}
+with open("sample.txt", "r") as file:
+    for line in file:
+        words = line.split()
+        for word in words:
+            word = word.lower().strip(",.!?")
+            if word in word_count:
+                word_count[word] += 1
+            else:
+                word_count[word] = 1
+print(word_count)</code></pre>
+
+            <h2>More Ideas to Try</h2>
+            <p>If you’re ready for a challenge, try building a To-Do List app, a Basic Quiz, or a Contact Book using dictionaries.</p>
+
+            <h2>Next Lesson</h2>
+            <p>We'll soon move into advanced topics, but for now, enjoy coding these mini-projects and see how much you've learned!</p>
+        </section>
+
+        <footer class="lesson-footer">
+            <p>Good luck, and happy coding!</p>
+        </footer>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">Back to Dashboard</a>
+
+</body>
+</html>

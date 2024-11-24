@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Lists, Tuples, and Dictionaries</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="lesson-container">
+        <header class="lesson-header">
+            <h1 style="color: red;">Lesson 5: Lists, Tuples, and Dictionaries</h1>
+        </header>
+
+        <section class="lesson-content">
+            <h2>What is a List?</h2>
+            <p>A <strong>list</strong> is a collection of ordered items. Lists are mutable, meaning you can change the items after the list has been created.</p>
+            
+            <h3>Creating a List</h3>
+            <p>Lists are created by placing items inside square brackets, separated by commas:</p>
+            <pre><code>fruits = ["apple", "banana", "cherry"]</code></pre>
+
+            <h3>Accessing List Items</h3>
+            <p>You can access items in a list by referring to their index:</p>
+            <pre><code>print(fruits[1])  # Output: banana</code></pre>
+
+            <h3>Modifying List Items</h3>
+            <p>Since lists are mutable, you can change their content:</p>
+            <pre><code>fruits[0] = "orange"  # Changes "apple" to "orange"</code></pre>
+
+            <h2>What is a Tuple?</h2>
+            <p>A <strong>tuple</strong> is similar to a list but is immutable, meaning its values cannot be changed once assigned.</p>
+
+            <h3>Creating a Tuple</h3>
+            <p>Tuples are created by placing items inside parentheses:</p>
+            <pre><code>coordinates = (4, 5)</code></pre>
+
+            <h3>Accessing Tuple Items</h3>
+            <p>You can access items in a tuple by referring to their index, just like lists:</p>
+            <pre><code>print(coordinates[0])  # Output: 4</code></pre>
+
+            <h2>What is a Dictionary?</h2>
+            <p>A <strong>dictionary</strong> is a collection of key-value pairs. Dictionaries are unordered, meaning the items do not have a fixed order.</p>
+
+            <h3>Creating a Dictionary</h3>
+            <p>Dictionaries are created by placing key-value pairs inside curly braces:</p>
+            <pre><code>person = {"name": "John", "age": 25}</code></pre>
+
+            <h3>Accessing Dictionary Values</h3>
+            <p>You can access a value in a dictionary by referring to its key:</p>
+            <pre><code>print(person["name"])  # Output: John</code></pre>
+
+            <h3>Modifying Dictionary Values</h3>
+            <p>Since dictionaries are mutable, you can modify their values:</p>
+            <pre><code>person["age"] = 26  # Changes the age to 26</code></pre>
+
+            <h2>Exercise: Practice with Lists, Tuples, and Dictionaries</h2>
+            <p style="color: blue;">Try the following exercises:</p>
+            <ul>
+                <li style="color: maroon;">Create a list of your favorite movies and print the first movie in the list.</li>
+                <li style="color: maroon;">Create a tuple of two numbers representing the coordinates of a location (x, y) and print the x coordinate.</li>
+                <li style="color: maroon;">Create a dictionary of a friend's name, age, and favorite color, and print the friend's age.</li>
+            </ul>
+
+           
+        </section>
+
+        <footer class="lesson-footer">
+            <p>Good luck, and happy coding!</p>
+        </footer>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">Back to Dashboard</a>
+
+</body>
+</html>

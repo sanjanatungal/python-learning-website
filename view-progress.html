@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Progress</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="progress-container">
+        <header class="progress-header">
+            <h1>Your Learning Progress</h1>
+            <p>Track your progress and see how far you've come!</p>
+        </header>
+
+        <section class="progress-content">
+            <!-- Progress Summary -->
+            <div class="progress-summary">
+                <h2>Overall Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 70%;"></div> <!-- Example completion percentage -->
+                </div>
+                <p>70% Complete</p>
+            </div>
+
+            <!-- List of Lessons with Completion Status -->
+            <div class="lesson-progress">
+                <h2>Lessons Completed</h2>
+                <ul>
+                    <li>Lesson 1: Introduction to Python - <span class="completed">Completed</span></li>
+                    <li>Lesson 2: Variables and Data Types - <span class="completed">Completed</span></li>
+                    <li>Lesson 3: Conditionals and Loops - <span class="completed">Completed</span></li>
+                    <li>Lesson 4: Functions and Methods - <span class="completed">Completed</span></li>
+                    <li>Lesson 5: Lists, Tuples, and Dictionaries - <span class="completed">Completed</span></li>
+                    <li>Lesson 6: File I/O - <span class="incomplete">In Progress</span></li>
+                    <li>Lesson 7: Practice with Small Projects - <span class="incomplete">In Progress</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="progress-footer">
+            <p>Keep going! You're doing great.</p>
+            <a href="dashboard.html" >Back to Dashboard</a>
+        </footer>
+    </div>
+
+</body>
+</html>

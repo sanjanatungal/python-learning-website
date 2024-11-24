@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 - File I/O in Python</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="lesson-container">
+        <header class="lesson-header">
+            <h1 style="color: red;">Lesson 6: Get Hands-On with File I/O</h1>
+        </header>
+
+        <section class="lesson-content">
+            <h2>What is File I/O?</h2>
+            <p><strong>File I/O</strong> (Input/Output) in Python refers to working with files for reading data from them or writing data to them. Python provides built-in functions to handle files easily.</p>
+
+            <h3>Opening a File</h3>
+            <p>To open a file in Python, you use the <code>open()</code> function. You can specify the mode you want to open the file in, such as <code>"r"</code> for reading, <code>"w"</code> for writing, or <code>"a"</code> for appending.</p>
+            <pre><code>file = open("example.txt", "r")  # Opens a file for reading</code></pre>
+
+            <h3>Reading from a File</h3>
+            <p>Once a file is opened in read mode, you can use the <code>read()</code>, <code>readline()</code>, or <code>readlines()</code> methods to read its contents.</p>
+            <pre><code>content = file.read()  # Reads the entire file
+print(content)</code></pre>
+
+            <h3>Writing to a File</h3>
+            <p>To write to a file, you open it in <code>"w"</code> mode, which will overwrite the file if it already exists. You can also use <code>"a"</code> mode to append to the file without overwriting.</p>
+            <pre><code>file = open("example.txt", "w")  # Opens a file for writing
+file.write("Hello, world!")  # Writes to the file
+file.close()  # Closes the file</code></pre>
+
+            <h3>Closing a File</h3>
+            <p>It is essential to close a file after you are done with it to free up system resources. You can close a file using the <code>close()</code> method:</p>
+            <pre><code>file.close()</code></pre>
+
+            <h3>Using <code>with</code> for File Handling</h3>
+            <p>The <code>with</code> statement is a better way to work with files, as it automatically handles closing the file:</p>
+            <pre><code>with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+
+            <h2>Exercise: Practice with File I/O</h2>
+            <p>Try the following exercises to practice file handling:</p>
+            <ul>
+                <li>Create a file called <code>my_file.txt</code> and write some text to it.</li>
+                <li>Open <code>my_file.txt</code> and read its contents, then print them to the console.</li>
+                <li>Append a new line to <code>my_file.txt</code> and verify it was added by reading the file again.</li>
+            </ul>
+        </section>
+
+        <footer class="lesson-footer">
+            <p>Good luck, and happy coding!</p>
+        </footer>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">Back to Dashboard</a>
+
+</body>
+</html>
